@@ -1,0 +1,27 @@
+<meta charset = utf-8>
+<script>
+
+//1.
+
+var obj = {
+	n: +prompt('введите значение от 0 до 999'),
+	units: 0,
+    tens: 0,
+    hundreds: 0
+};
+
+function f(obj){
+    if (obj.n >= 0 && obj.n <= 999){
+    	obj.units = obj.n % 10;
+	    obj.tens = parseInt((obj.n % 100) / 10);
+	    obj.hundreds = parseInt(obj.n / 100);
+	    return obj;
+	}   
+    else {
+    	console.log('некорректный ввод');
+    	return obj; 
+    }
+}
+console.log(f(obj));
+
+</script>	
