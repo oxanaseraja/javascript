@@ -1,0 +1,53 @@
+<meta charset = utf-8>
+<script>
+   //1.
+    let arr = [0, 1];
+    let n = 2;
+    while (n <=100){
+        i = 2;
+        count = 0;
+    	while (i < n){
+    		if (n % i == 0){
+    		    count++;
+    		}
+    		i++;
+    	}
+        if(count == 0){
+        	arr.push(n);
+        }
+        n++;
+    }
+
+    document.write(arr)
+
+    //2, 3.
+    const n = parseInt(Math.random() * 10)
+    let arrN = [];
+
+    for(let i = 0; i <= n; i++){
+    	arrN.push(parseInt(Math.random() * 1000))
+    }
+
+    function countBasketPrice(arr){
+    	sum = 0;
+    	for (const elem of arr){
+    		sum += elem;
+    	}
+    	return sum;
+    }
+
+    document.write(countBasketPrice(arrN));
+
+    //4.
+    for(let i = 0; i < 10; console.log(i++)){
+    	//
+    }
+
+    //5.
+    stars = '';
+    for(let i = 1; i <= 20; i++) {
+        stars +='*';
+        console.log(stars);
+    }
+
+</script>
